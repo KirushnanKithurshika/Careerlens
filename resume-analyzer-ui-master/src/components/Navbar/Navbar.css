@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #1e293b;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+
+  color: rgb(144, 12, 104);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 14px;
+  font-weight: 500;
+}
+.user-icon {
+  font-size: 28px;
+  color: linear-gradient(to right, #5f0769, #f43f5e, #f97316); /* purple accent */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.user-icon:hover {
+  color: #940fa2; /* darker purple on hover */
+}
+
+/* Divider under navbar */
+.navbar-divider {
+  height: 20px;  /* thickness */
+  width: 100%;
+  background: linear-gradient(to right, #5f0769, #f43f5e, #f97316); 
+  border: none;
+}
