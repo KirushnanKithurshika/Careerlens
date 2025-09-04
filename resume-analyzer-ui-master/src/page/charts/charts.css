@@ -1,0 +1,30 @@
+.charts-dashboard {
+
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Calibri", "Segoe UI", sans-serif;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #4c1d95; /* deep purple accent */
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.chart-wrapper {
+  margin-bottom: 50px; /* space between charts */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}

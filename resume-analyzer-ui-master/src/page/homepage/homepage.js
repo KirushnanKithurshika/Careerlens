@@ -50,7 +50,7 @@ const HomePage = ({ onResult }) => {
   return (
     <div className="landing">
       {/* Navbar */}
-     
+
 
       {/* Hero Section */}
       <div className="hero">
@@ -66,13 +66,13 @@ const HomePage = ({ onResult }) => {
             handleUpload();
           }}
         >
-          <label>Name</label>
+          <label className="label">Name</label>
           <input type="text" placeholder="Enter your name" />
 
-          <label>Email</label>
+          <label className="label">Email</label>
           <input type="email" placeholder="Enter your email" />
 
-          <label>Contact Number</label>
+          <label className="label">Contact Number</label>
           <input type="tel" placeholder="Enter your phone number" />
 
           <p className="form-note">
@@ -91,8 +91,8 @@ const HomePage = ({ onResult }) => {
               style={{ display: "none" }}
               id="fileUpload"
             />
-            <label htmlFor="fileUpload" className="browse-btn">
-              {loading ? "Analyzing..." : "Browse File"}
+            <label htmlFor="fileUpload" className="browse-btn upload-btn">
+              Browse File
             </label>
           </div>
 
@@ -109,7 +109,7 @@ const HomePage = ({ onResult }) => {
           {/* Analyze Button */}
           <button
             type="submit"
-            className={`browse-btn ${loading ? "loading" : ""}`}
+            className={`browse-btn analyze-btn ${loading ? "loading" : ""}`}
             disabled={loading || !selectedFile}
             style={{ marginTop: "15px" }}
           >

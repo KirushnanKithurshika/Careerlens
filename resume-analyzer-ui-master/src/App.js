@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./page/homepage/homepage";
 import Summary from "./components/Summery/Summary";
 import Layout from "./components/Layout";
+import AdminLogin from "./components/Admin/Login/adminlogin";
+import UserTable from "./components/Admin/usertable/usertable";
+import ChartsDashboard from "./page/charts/charts";
 
 function App() {
   return (
@@ -13,9 +16,12 @@ function App() {
         <Routes>
           {/* Home route */}
           <Route path="/" element={<HomePage />} />
-
-          {/* Summary route */}
+          <Route path="/admin-login" element={
+            <AdminLogin />
+          } />
           <Route path="/summary" element={<Summary />} />
+          <Route path="/user-table" element={<UserTable />} />
+          <Route path="/chart-dashboard" element={<ChartsDashboard/>} />
         </Routes>
       </Layout>
     </Router>

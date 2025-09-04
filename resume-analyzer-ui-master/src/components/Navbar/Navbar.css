@@ -7,13 +7,50 @@ body {
 
 /* Navbar */
 .navbar {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-
-  color: rgb(144, 12, 104);
+  justify-content: space-between; /* keeps logo left, user icon right */
+  padding: 12px 24px;
+  background: #fff;
+  font-family: "Calibri", "Segoe UI", sans-serif;
 }
+
+/* Logo */
+.logo-img {
+  height: 40px;
+}
+
+/* Tagline centered using absolute positioning */
+.tagline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: #800786;
+}
+
+/* User Icon (clickable) */
+.user-icon {
+  font-size: 28px;
+  color: #800786;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.user-icon:hover {
+  color: #7e22ce;
+}
+
+/* Gradient Divider */
+.navbar-divider {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, #9333ea, #f43f5e, #f97316);
+  border: none;
+}
+
 
 .logo {
   display: flex;
